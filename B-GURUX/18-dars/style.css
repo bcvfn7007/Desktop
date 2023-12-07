@@ -5,3 +5,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: blanchedalmond;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heder-container {
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+}
+
+@media only all and (max-width: 992px)  {
+    .heder-container {
+        background-color: dodgerblue;
+    }
+}
+
+@media only all and (max-width: 576px)  {
+    .heder-container {
+        background-color: aqua;
+    }
+}
+
