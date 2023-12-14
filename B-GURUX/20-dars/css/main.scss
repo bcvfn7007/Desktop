@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+
+.container {
+    max-width: 1440px;
+    padding: 0 136px;
+    margin: 0 auto;
+}
+
+
+.info {
+    text-align: center;
+    width: 600px;
+    height: 159px;
+    flex-shrink: 0;
+    margin-left: 300px;
+
+    .store {
+        color: #DB343B;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 38.4px;
+        padding-left: 5px;
+        padding-bottom: 11px;
+    }
+
+    .lor {
+        color: #292C32;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+    }
+}
+
+.cards {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        height: 438px;
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+
+        .info2 {
+            padding-left: 30px;
+            padding-top: 28px;
+
+
+            .mirro {
+                width: 285px;
+                color: #3A5F56;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 33.6px;
+                margin-bottom: 6px;
+            }
+
+            .the {
+                color: #3A5F56;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22.4px;
+            }
+        }
+    }
+
+
+}
+
+.btn {
+    display: flex;
+    gap: 5px;
+    padding-left: 540px;
+    padding-top: 30px;
+
+
+    .read {
+        text-decoration: none;
+        color: #3A5F56;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.8px;
+    }
+}
+
+
+
+.mirro__container {
+    display: flex;
+    padding: 10px 120px;
+
+    .mirro__container--img {
+        display: inline-block;
+    }
+
+
+    .mirro__container--cards {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+
+        .mirro__container--card {
+            position: relative;
+
+            .mirro__container--link {
+                text-decoration: none;
+                color: #3A5F56;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 16px;
+
+                .mirro__container--btn {
+                    padding-left: 43px;
+                    background-color: #3A5F56;
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22.4px;
+
+                }
+            }
+        }
+    }
+}

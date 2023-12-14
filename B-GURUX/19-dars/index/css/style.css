@@ -9,7 +9,7 @@
 body {
     font-family: 'Barlow', sans-serif;
     background: aliceblue;
-    cursor: url(' 5.svg'), auto;
+
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
     height: 113px;
     align-items: center;
     display: flex;
-    gap: 540px;
+    gap: 740px;
 }
 
 .coffee__cards {
@@ -43,7 +43,27 @@ body {
 
 }
 
-.create__container {
+.hero {
+    padding-bottom: 136px;
+
+}
+
+/* .create__container {
+    background-image: url(../imge/Bitmap.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 8px;
+} */
+
+.info {
+    padding-top: 117px;
+    padding-left: 100px;
+}
+
+.create__container--info {
     background-image: url(../imge/Bitmap.svg);
     background-repeat: no-repeat;
     position: relative;
@@ -53,13 +73,7 @@ body {
     border-radius: 8px;
 }
 
-
-.create__container--info {
-    padding-top: 117px;
-    padding-right: 100px;
-}
-
-.create__container::before {
+.create__container--info::before {
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.40);
@@ -106,4 +120,279 @@ body {
     background: #0E8784;
     border: none;
     margin-bottom: 103px;
+}
+
+.collection__container {
+    background: #FEFCF7;
+}
+
+.collection__container--cards {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.collection-container--card {
+    gap: 71px;
+}
+
+.collection__container--card:hover {
+    transform: translatey(-60px);
+    transition: 0.6s;
+}
+
+.collection__container--info {
+    width: 255px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.collection__container--gran {
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.collection__container--light {
+    width: 255px;
+    color: #333D4B;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.hero2 {
+    margin-bottom: 200px;
+}
+
+.choouse__container {
+    height: 578px;
+    border-radius: 10px;
+    background: #2C343E;
+}
+
+.choouse__container--info {
+    width: 540px;
+    gap: 32px;
+    margin-left: 370px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.choouse__container--why {
+    color: #FEFCF7;
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 32px;
+    margin-top: 100px;
+}
+
+.choouse__container--part {
+    width: 540px;
+    color: #FEFCF7;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.choouse__container--cards {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 85px;
+}
+
+.choouse__container--card {
+    width: 350px;
+    list-style: none;
+    height: 382px;
+    border-radius: 8px;
+    background: #0E8784;
+    top: 50px;
+    left: 85px;
+}
+
+.choouse__container--card:hover {
+    transform: translatey(-60px);
+    transition: 0.6s;
+}
+
+.choouse__container--ul-li {
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 100px;
+}
+
+.choouse__container--best {
+    width: 255px;
+    color: #FEFCF7;
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+.choouse__container--discover {
+    width: 255px;
+    color: #FEFCF7;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.works__container--img {
+    position: relative;
+}
+
+.img-pos {
+    margin-top: 72px;
+    margin-left: 135px;
+}
+
+.hero3 {
+    margin-bottom: 200px;
+}
+
+.works__container--how {
+    width: 255px;
+    color: #83888F;
+    font-family: 'Fraunces';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 80px;
+}
+
+.pos1 {
+    margin-bottom: 82px;
+}
+
+.works__container--pos {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
+.works__container--pos2 {
+    position: absolute;
+    bottom: 70px;
+    left: 349px;
+}
+
+.works__container--pos3 {
+    position: absolute;
+    bottom: 70px;
+
+}
+
+.works__container--cards {
+    display: flex;
+    list-style: none;
+    gap: 95px;
+}
+
+.works__container--card {
+    width: 285px;
+    height: 355px;
+}
+
+.works__container--nomber {
+    color: #FDD6BA;
+    font-family: 'Fraunces';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+    margin-bottom: 32px;
+}
+
+.works__container--pick {
+    width: 255px;
+    color: #333D4B;
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    margin-bottom: 62px;
+}
+
+.works__container--select {
+    width: 285px;
+    color: #333D4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 42px;
+}
+
+.works__container--btn {
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 31px;
+    padding-right: 31px;
+    color: #FEFCF7;
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    border-radius: 6px;
+    background: #0E8784;
+    border: none;
+    margin-bottom: 200px;
+}
+
+.sters__container {
+    background: #2C343E;
+    margin-bottom: 30px;
+    height: 113px;
+    align-items: center;
+    display: flex;
+    gap: 102px;
+}
+
+.sters__container--cards {
+    display: flex;
+    gap: 33px;
+    list-style: none;
+}
+
+.sters__container--link {
+    text-decoration: none;
+    color: #83888F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+}
+
+.gr {
+    margin-left: 369px;
 }
