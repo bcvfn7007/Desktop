@@ -12,10 +12,40 @@ body {
 
 }
 
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 80px;
+}
+
+.opasity {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1440px;
+    height: 860px;
+}
+
+.opasity::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.5;
+    background: #000;
+}
+
+.opasity:hover {
+    cursor: pointer;
+}
+
+.opasity:active {
+    background: url(./plan.html);
 }
 
 .coffee-container {
@@ -24,6 +54,7 @@ body {
     align-items: center;
     display: flex;
     gap: 740px;
+    z-index: -1;
 }
 
 .coffee__cards {
@@ -42,6 +73,7 @@ body {
     line-height: 15px;
 
 }
+
 
 .plan__container {
     position: relative;
@@ -82,7 +114,9 @@ body {
     margin-bottom: 160px;
 }
 
-
+.img {
+    z-index: -1;
+}
 
 .works__container--img {
     position: relative;
@@ -193,253 +227,96 @@ body {
     margin-bottom: 200px;
 }
 
-.drink__container {
-    display: flex;
-    gap: 125px;
-}
-
-.drink__container--info {
-
-    margin-top: 159px;
-}
-
-.drink__container--display {
-    margin-top: 60px;
-    list-style: none;
-}
-
-.display {
-    display: flex;
-    gap: 28px;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-
-}
-
-.item2 {
-    margin-top: 88px;
-    margin-bottom: 88px;
-}
-
-.drink__container--nomber {
-    color: #83888F;
-    font-family: 'Fraunces';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-}
-
-.drink__container--nomber:hover {
-    color: #0E8784;
-}
-
-.drink__container--prefer {
-    color: #83888F;
-    font-family: 'Fraunces';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-}
-
-.drink__container--prefer:hover {
-    color: #333D4B;
-}
-
-.drink__container--cards {
-    display: flex;
-    list-style: none;
-    width: 730px;
-    height: 354px;
-    gap: 23px;
-    overflow: hidden;
-    transition: 1s;
-    height: 0;
-}
-
-.drink__container--card {
-    width: 228px;
-    height: 250px;
+.summary__container {
+    width: 540px;
+    height: 597px;
+    position: absolute;
+    left: 450px;
+    top: 214px;
+    bottom: 213px;
     border-radius: 8px;
-    background: #F4F1EB;
-
-}
-
-.drink__container--card:hover {
-    cursor: pointer;
-    background: #0E8784;
-    color: #FFF;
-    transition: 0.3s;
+    background: #FEFCF7;
 }
 
 .info {
-    padding-top: 32px;
-    padding-left: 28px;
-    display: inline-block;
-}
-
-.drink__container--capsule {
-    /* color: #333D4B; */
-    font-family: 'Fraunces';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 32px;
-    margin-bottom: 24px;
-}
-
-.drink__container--with {
-    width: 172px;
-    /* color: #333D4B; */
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-}
-
-.info2 {
-    display: flex;
-    gap: 170px;
-    padding-bottom: 56px;
-}
-
-
-
-.visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0);
+    width: 540px;
+    height: 136px;
+    right: 0px;
+    border-radius: 8px 8px 0px 0px;
+    background: #333D4B;
 }
 
-.box__head--img {
-    transform: rotate(-180deg);
-    transition: 0.3s;
-
-}
-
-
-
-.checkbox:checked~.drink__container--cards {
-    height: 250px;
-}
-
-.checkbox:checked~.info2>.box__head--img {
-    transform: rotate(0);
-}
-
-.drink__container--how {
-    color: #83888F;
-    font-family: 'Fraunces';
+.order {
+    margin-top: 40px;
+    margin-left: 40px;
+    color: #FFF;
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: 48px;
 }
 
-
-.what__container {
-    margin-left: 545px;
-}
-
-.what__container--info2 {
-    display: flex;
-    gap: 340px;
-    margin-bottom: 56px;
-}
-
-
-
-
-.sters__container {
-    background: #2C343E;
-    margin-bottom: 30px;
-    height: 113px;
-    align-items: center;
-    display: flex;
-    gap: 102px;
-}
-
-.sters__container--cards {
-    display: flex;
-    gap: 33px;
-    list-style: none;
-}
-
-.sters__container--link {
-    text-decoration: none;
-    color: #83888F;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0.923px;
-    text-transform: uppercase;
-}
-
-.gr {
-    margin-left: 369px;
-}
-
-
-
-.order__container {
-    padding-left: 545px;
-    padding-top: 84px;
-    padding-bottom: 208px;
-    
-}
-
-.order__container--info {
-    width: 730px;
-    height: 208px;
-    background: #2C343E;
-    padding-left: 64px;
-    padding-top: 31px;
-    position: relative;
-}
-
-.mary {
-    width: 172px;
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    text-transform: uppercase;
+.infos {
+    margin-top: 200px;
 }
 
 .myco {
-    color: #FFF;
+    width: 428px;
+    color: #83888F;
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
+    margin-bottom: 7px;
 }
 
 .filter {
     color: #0E8784;
 }
 
-.plan {
-    position: absolute;
-    right: 0;
-    top: 252px;
+.this {
+    width: 428px;
+    color: #333D4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    opacity: 0.8;
+    margin-bottom: 47px;
+}
+
+.dis {
+    display: flex;
+    gap: 15px;
+    margin-top: 47px;
+    width: 428px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mo {
+    color: #333D4B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.out {
+    padding: 15px 64px;
     color: #FEFCF7;
     text-align: center;
+    font-family: 'Fraunces' 9pt;
     font-size: 18px;
     font-style: normal;
     font-weight: 900;
     line-height: 25px;
-    padding: 15px 35px;
     border-radius: 6px;
     background: #0E8784;
     border: none;
+    cursor: pointer;
 }
+
+
+
